@@ -8,7 +8,7 @@ const router = require('./controllers/index');
 
 const app = express();
 
-app.set('port', process.env.PORT || 5432);
+app.set('port', process.env.PORT || 4000);
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
