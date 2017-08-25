@@ -4,8 +4,6 @@ require('env2')('./config.env');
 
 if(!process.env.DATABASE_URL) throw new Error('Environment variable DATABASE_URL must be set');
 
-// if(!auth) throw new Error('Authprozation is required');
-
 const params = url.parse(process.env.DATABASE_URL);
 console.log ('db host: ',params.host);
 
