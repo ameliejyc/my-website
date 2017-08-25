@@ -1,0 +1,64 @@
+/******************************************************************
+Use BEM (Block Element Modifier): .blockname__element--modifier
+i) Split the site into blocks - independent entities, e.g. a header or a search bar within a header. Block names must be unique.
+ii) Separate out the elements - parts of a block that have specific functions, e.g. a search box and submit button within a search bar. Element names must be unique within a block.
+iii) Add modifiers if necessary which act on blocks or elements to change their behaviour, e.g. a border/success/greyscale modifier.
+******************************************************************/
+
+html {
+  min-height: 100%;
+}
+
+body {
+  width: 80vw;
+  margin: auto;
+}
+
+main {
+  margin-top: 5em;
+}
+
+/*************************
+NAVIGATION BAR
+*************************/
+
+.navbar__nav {
+  /*TODO: make the navigation opaque block so that text doesn't show under it when scrolling down */
+}
+
+.navbar__list {
+  top: 0;
+  position: fixed;
+  list-style: none;
+  padding-bottom: 0.5em;
+  border-bottom-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: thick;
+  font-size: 1.5em;
+  width: 80vw;
+}
+
+.navbar__item {
+  display: inline;
+  margin: 0.5em;
+}
+
+.navbar__link {
+  text-decoration: none;
+}
+
+/*************************
+CV SECTION
+*************************/
+
+#cv {
+
+}
+
+/*************************
+CONTACT SECTION
+*************************/
+
+#contact {
+  /*margin: 50em;*/
+}
