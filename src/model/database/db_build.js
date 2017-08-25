@@ -7,6 +7,8 @@ const fs = require('fs');
 //   dbConnection = require('../database/db_connection.js');
 // }
 
+dbConnection = require('../database/db_connection.js');
+
 const sql = fs.readFileSync(`${__dirname}/db_build.sql`).toString();
 
 const runDbBuild = dbConnection.query(sql, (err, res) => {
