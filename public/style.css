@@ -1,0 +1,123 @@
+/******************************************************************
+Use BEM (Block Element Modifier): .blockname__element--modifier
+i) Split the site into blocks - independent entities, e.g. a header or a search bar within a header. Block names must be unique.
+ii) Separate out the elements - parts of a block that have specific functions, e.g. a search box and submit button within a search bar. Element names must be unique within a block.
+iii) Add modifiers if necessary which act on blocks or elements to change their behaviour, e.g. a border/success/greyscale modifier.
+******************************************************************/
+
+html {
+  min-height: 100%;
+}
+
+body {
+  width: 60vw;
+  margin: auto;
+  font-family: 'Karla', sans-serif;
+}
+
+main {
+
+}
+
+h1 {
+  font-size: 5vw;
+  /*margin-left: 3vw;*/
+  border-bottom: 0.2vw solid black;
+}
+
+/*************************
+NAVIGATION BAR
+*************************/
+
+.navbar__container {
+  /*width: 20vw;*/
+}
+
+.navbar__nav {
+  top: 0;
+  left: 0;
+  position: fixed;
+  /*width: 20vw; this is doing nothing */
+}
+
+.navbar__icon {
+  width: 6vw;
+  height: 6vw;
+  display: block;
+  padding: 1vw 3vw 0 3vw;
+  -webkit-transition: -webkit-transform .8s ease-in-out
+}
+
+.navbar__icon:hover {
+  -webkit-transform: rotate(180deg);
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  cursor: pointer;
+}
+
+.navbar__list {
+  list-style: none;
+  padding: 0 3vw;
+}
+
+.navbar__item {
+  display: block;
+  font-size: 2vw;
+}
+
+/*.navbar_icon:hover .navbar__list {
+  display: none;
+}*/
+
+.navbar__link {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar__link:hover {
+  text-decoration: underline;
+}
+
+/*************************
+CV SECTION
+*************************/
+
+#cv {
+  list-style-type: square;
+}
+
+ .cv__link {
+   text-decoration: none;
+   color: rgb(231, 71, 240);
+ }
+
+ .cv__link:hover {
+   text-decoration: underline;
+ }
+
+/*************************
+CONTACT SECTION
+*************************/
+
+.contact__link {
+  text-decoration: none;
+  color: black;
+}
+
+.contact__link:hover {
+  text-decoration: underline;
+}
+
+.contact__icon {
+  width: 6vw;
+  margin-right: 2vw;
+}
+
+/*************************
+FOOTER
+*************************/
+
+.footer__container {
+  bottom: 2em;
+  padding-top: 1em;
+  text-align: center;
+}

@@ -5,12 +5,13 @@ DROP TABLE IF EXISTS blog, users CASCADE;
 CREATE TABLE blog (
 id           SERIAL        PRIMARY KEY,
 title        VARCHAR(50)   NOT NULL,
-content      TEXT          NOT NULL,
-submit_date  VARCHAR(10)   NOT NULL
+ingredients  TEXT          NOT NULL,
+method       TEXT          NOT NULL
 );
 
-INSERT INTO blog (title, content, submit_date) VALUES
-('The world needs another coding blog', 'Here is the content', 'The date');
+INSERT INTO blog (title, ingredients, method) VALUES
+('Vegan dreams part I', 'Ingredients list', 'Method'),
+('Vegan dreams part II', 'Ingredients', 'Method');
 
 
 CREATE TABLE users (

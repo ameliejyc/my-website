@@ -1,1 +1,24 @@
-<h1>Here will be data extracted from the database</h1>
+<main class="main">
+  <section class="main__container--limited-width">
+    <form class="login-form" action="/login" method="post">
+      <label class="login-form__label" for="name">Admin</label>
+      <input class="login-form__input" type="text" name="username" id="username"
+        placeholder="Enter username" pattern="[A-Za-z]{2,20}"
+        title="At least two letters" required autocomplete="off">
+      <label class="login-form__label" for="password">Password</label>
+      <input class="login-form__input" type="text" name="password" id="password"
+        placeholder="Enter password" required autocomplete="off">
+      <input class="login-form__btn" type="submit" value="Submit"/>
+    </form>
+    <h1 class="main__title">Blog</h1>
+  </section>
+  <section class="blog__container">
+    {{#each recipes}}
+    <article class="blog__recipe">
+      <h1>{{this.title}}</h1>
+      <p>{{this.ingredients}}</p>
+      <p>{{this.method}}</p>
+    </article>
+    {{/each}}
+  </section>
+</main>
