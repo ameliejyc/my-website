@@ -5,7 +5,7 @@ const getRecipe = (cb) => {
   dbConnection.query(getRecipeQuery, (err, res) => {
     if (err) return cb(err);
     else {
-      // console.log('nothing is happening?', res.rows);
+      // console.log('this is the response', res.rows);
       cb(null, res.rows);
     }
   });
